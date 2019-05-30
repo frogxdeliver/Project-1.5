@@ -14,7 +14,7 @@
                 <a href="page3.html">Page 3</a>
                 <a href="page4.html">Page 4</a>
         </nav>
-        <h1>Different Types of Input Elements</h1>
+        <h1>Different Types of Form Elements</h1>
         <p>
             <ul>
                 <li>select</li>
@@ -35,28 +35,44 @@
                         <li>This element creates a textbox that allows for multi line input,
                              and the size of the text box can be specified </li>
                         <li class="important">Example</li>
-                        <blockquote><form method="GET">
+                        <blockquote>
                                     <textarea name="message" rows=10 columns=30></textarea>
-                        </form></blockquote>        
+                        </blockquote>        
                     </ul>
                 <li>button</li>
                     <ul>
                         <li>This element creates a clickable button on the form</li>
                     <li class="important">Example</li>
-                        <blockquote><form method="GET">
+                        <blockquote>
                                     <button name="button">Click Me!</button>
-                        </form></blockquote>
+                        </blockquote>
                     
                     </ul>
+                <h2>Examples of Input Elements</h2>
                 <li>radio</li>
                     <ul>
                         <li>This element creates radio buttons that can be clicked by the user to choose an option</li>
                         <li class="important">Example</li>
-                        <blockquote><form mehod="GET">
-                                    <radio name=
-                        </form></blockquote>
+                        <blockquote>
+                                <label> Option 1
+                                        <input type="radio" name="which" value="1"></input>
+                                </label>  
+                                <label>Option 2
+                                        <input type="radio" name="which" value="2"></input>
+                                </label>Option 3
+                                    <input type="radio" name="which" value="3"></input>
+                        </blockquote>
                     </ul>
-                
+                <li>checkbox</li>
+                    <ul>
+                        <li>This element creates a box that is checked once clicked</li>
+                        <li class="important">Example</li>
+                        <blockquote>
+                            <label>Click box for Yes!
+                                <input type="checkbox" name="chkbox">
+                            </label>
+                        </blockquote>
+                    </ul>
     
                 
             </ul>
@@ -76,7 +92,25 @@
         <input type="submit">
     </form>
 
-    
+    <h1>HTML Form Using a POST Request</h1>
+    <p>
+        Below is an example of an HTML Form using a POST Request.  <br>
+        The user is asked for their username and password and then that data is sent to a server<br>
+        In a more advanced application, the server would then access a database to verify the username and password that was entered.<br>
+
+        
+
+    </p>
+
+    <form method="POST" action="https://google.com/search">
+       <label>Username: 
+            <input type="text" name="email">
+       </label> 
+       <label>Password:
+            <input type="password" name="password">
+       </label>
+        <input type="submit">
+    </form>
 
 
 
