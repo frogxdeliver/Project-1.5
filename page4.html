@@ -92,8 +92,16 @@
                 <div class="col-4 text-center">
                     <h3>Input Type Button</h3>
                     <p>Defines a button</p>
-                    <input type="button" value="Click Me!"><br><br>
-                    <img src="images/button.PNG">
+                    <form>
+                            <button type="button"
+                            onclick="document.getElementById('demo').innerHTML = Date()">
+                            Click me to display Date and Time.</button>
+                            
+                            <p id="demo"></p>
+                </form>
+                   
+
+                    <img src="pg4img.PNG">
                 </div>
             <div class="col-4"></div>
         </div>
@@ -133,7 +141,7 @@
             </div>
         <div class="col-4"></div>
     </div>
-    
+       
     <!--SPACING-->
     <div class="pr-5"><br></div>
     <div class="pr-5"><br></div>
@@ -152,4 +160,8 @@
 
 </div>
 </body>
+
+<script src="DOM.js">
+
+</script>
 </html>
